@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary-light-red: hsl(0, 100%, 67%);
+    --primary-orange-yellow: hsl(39, 100%, 56%);
+    --primary-green-teal: hsl(166, 100%, 37%);
+    --primary-cobalt-blue: hsl(234, 85%, 45%);
+
+    --bg-gradient-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-gradient-light-royal-blue: hsl(241, 81%, 54%);
+
+    --circle-gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --circle-gradient-persian-blue:hsla(241, 72%, 46%, 0);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-pale-blue: hsl(221, 100%, 96%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --paragraph-font-size: 18px;
+    --font-family: 'Hanken Grotesk', sans-serif;
+
+    /* Widths */
+    --mobile-screen: 375px;
+    --desktop-screen: 1440px;
+
+
+
+}
+
+/* Universal Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+ul {
+    list-style: none;
+}
+
+.icon-size {
+    height: 1em;
+    width: 1em;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Mobile Screen */
+section {
+    width: 100vw;
+}
+
+#blue-section {
+    background: linear-gradient(var(--bg-gradient-light-slate-blue), var(--bg-gradient-light-royal-blue));
+    height: 40vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+    align-items: center;
+    border-bottom-left-radius: 2.5em;
+    border-bottom-right-radius: 2.5em;
+    justify-content: center;
+}
+
+#white-section {
+    height: 60vh;
+}
