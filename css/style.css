@@ -4,9 +4,16 @@
 :root {
     /* Colors */
     --primary-light-red: hsl(0, 100%, 67%);
+    --primary-light-red-100: hsla(0, 100%, 67%, .1);
+    
     --primary-orange-yellow: hsl(39, 100%, 56%);
+    --primary-orange-yellow-100: hsla(39, 100%, 56%, .1);
+    
     --primary-green-teal: hsl(166, 100%, 37%);
+    --primary-green-teal-100: hsla(166, 100%, 37%, .1);
+    
     --primary-cobalt-blue: hsl(234, 85%, 45%);
+    --primary-cobalt-blue-100: hsla(234, 85%, 45%, 0.1);
 
     --bg-gradient-light-slate-blue: hsl(252, 100%, 67%);
     --bg-gradient-light-royal-blue: hsl(241, 81%, 54%);
@@ -60,6 +67,31 @@ ul {
     color: var(--neutral-white);
 }
 
+.red-color {
+    color: var(--primary-light-red);
+}
+.red-bg {
+    background-color: var(--primary-light-red-100);
+}
+.yellow-color {
+    color: var(--primary-orange-yellow);
+}
+.yellow-bg {
+    background-color: var(--primary-orange-yellow-100);
+}
+.green-color {
+    color: var(--primary-green-teal);
+}
+.green-bg {
+    background-color: var(--primary-green-teal-100);
+}
+.blue-color {
+    color: var(--primary-cobalt-blue);
+}
+.blue-bg {
+    background-color: var(--primary-cobalt-blue-100);
+}
+
 .lavender-color {
     color: var(--neutral-light-lavender);
 }
@@ -108,4 +140,30 @@ section {
 
 #white-section {
     height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    row-gap: 1.2em;
+}
+.item-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2em;
+}
+.item {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .6em;
+}
+.item-left {
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
+}
+.btn {
+    background-color: var(--neutral-dark-gray-blue);
+    padding: .6em;
+    border-radius: 1em;
 }
