@@ -168,10 +168,10 @@ section {
     border-radius: 1em;
     cursor: pointer;
 }
-.mobile-hide {
+.desk-hide {
     display: block;
 }
-.desk-hide {
+.desk-show {
     display: none;
 }
 
@@ -184,11 +184,11 @@ section {
         height: 100vh;
         background-color: var(--neutral-pale-blue);
     }
-    .mobile-hide {
-        display: block;
-    }
     .desk-hide {
         display: none;
+    }
+    .desk-show {
+        display: block;
     }
     section {
         display: flex;
